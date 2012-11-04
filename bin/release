@@ -2,6 +2,7 @@
 # bin/release <build-dir>
 
 cat << EOF
+---
 default_process_types:
   web: bin/php -S localhost:$PORT www/server_api.php
 EOF
