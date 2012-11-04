@@ -14,6 +14,8 @@ curl --location "http://vulcan-aotoki.herokuapp.com/output/4a669895-5308-4846-8a
 
 cat >>boot.sh << EOF
   PORT=`env|grep PORT|cut -f2 -d=`
+  env|grep PORT|cut -f2 -d=
+  echo $PORT
   echo "Lunching PHP Build in Server"
   exec /app/bin/php -S 127.0.0.1:$PORT www/server_api.php
 EOF
