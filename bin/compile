@@ -13,6 +13,7 @@ mv $CACHE_DIR/www .
 curl --location "http://vulcan-aotoki.herokuapp.com/output/4a669895-5308-4846-8a72-28d78d46a999" | tar xz
 
 cat >>boot.sh << EOF
+  env
   PORT=`env|grep PORT|cut -f2 -d=`
   env|grep PORT|cut -f2 -d=
   echo $PORT
