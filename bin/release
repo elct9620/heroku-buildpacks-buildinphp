@@ -4,5 +4,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: bin/php -S 127.0.0.1:$PORT www/server_api.php
+  web: sh boot.sh $PORT
 EOF
