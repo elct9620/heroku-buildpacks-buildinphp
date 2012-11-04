@@ -1,0 +1,6 @@
+#!/usr/sh
+
+curl --location "http://vulcan-aotoki.herokuapp.com/output/4a669895-5308-4846-8a72-28d78d46a999" | tar xz
+
+mkdir -p bin
+ln -s /app/php/bin/php bin/php
